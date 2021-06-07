@@ -6,7 +6,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt install -y \
     maven \
     openjdk-11-jdk \
     curl \
-    make
+    make \
+    gnupg
 
 RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
