@@ -7,7 +7,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt install -y \
     openjdk-11-jdk \
     curl \
     make \
-    gnupg
+    gnupg \
+    docker
 
 RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
