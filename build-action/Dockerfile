@@ -12,4 +12,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt install -y \
 
 RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
-CMD make package d-build
+CMD make package d-build deploy
