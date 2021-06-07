@@ -4,5 +4,3 @@ description: 'build my project'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  env:
-    HEROKU_API_KEY: ${{secret.HEROKU_API_KEY}}
