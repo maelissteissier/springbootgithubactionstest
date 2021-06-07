@@ -24,12 +24,7 @@ jobs:
     steps:
       # Checks-out (clone sources of) your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Try LS
-        run: ls -a
-      - uses: docker://ubuntu:20.04
-        with:
-          entrypoint: /bin/bash
-          args: -c "pwd && ls"
+      - uses: actions/build-action@v1
 #      - name: Set up JDK 11
 #        uses: actions/setup-java@v2
 #        with:
