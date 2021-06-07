@@ -8,7 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt install -y \
     curl \
     make \
     gnupg \
-    docker
+    docker.io
 
 RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
