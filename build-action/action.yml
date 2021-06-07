@@ -1,0 +1,6 @@
+# action.yml
+name: 'build maven jdk11 heroku'
+description: 'build my project'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
