@@ -22,10 +22,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-#      - uses: actions/checkout@v2
+      # Checks-out (clone sources of) your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
       - name: Try LS
         run: ls -a
+      - uses: docker://ubuntu:20.04
+        run: pwd && ls
 #      - name: Set up JDK 11
 #        uses: actions/setup-java@v2
 #        with:
